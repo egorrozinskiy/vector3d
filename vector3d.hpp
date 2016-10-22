@@ -15,20 +15,15 @@ public:
     int get_x();
     int get_y();
     int get_z();
-
+    
     vector3d();
-    vector3d( int _x, int _y, int _z) {};
-    vector3d operator+(const vector3d &a){};
-    vector3d operator-(const vector3d &a){};
-    vector3d operator*(const vector3d &a){};
-    vector3d operator^(const vector3d &a){};]
-    vector3d operator
-
-
-    // TODO: дописать
-
-};
-
-// TODO: дописать
-
+    vector3d( int _x, int _y, int _z) ;
+    vector3d operator+(const vector3d &a) const;
+    vector3d operator-(const vector3d &a) const;
+    vector3d operator*(const vector3d &a) const;
+    vector3d operator^(const vector3d &a) const;
+    bool operator==(const vector3d &a) const;
+    bool operator!=(const vector3d &a) const;
+    double Length() const;
+    double Normalize() const;
 #endif
